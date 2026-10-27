@@ -1,716 +1,1346 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Creative Developer</title>
-    <meta name="description" content="Creative Developer Portfolio" />
-    <meta name="author" content="Lovable" />
-    <meta name="description" content="Creative Developer Portfolio">
-    <meta name="author" content="Lovable">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tej Desai | Full Stack & Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Tej Desai - Full Stack Developer. Experienced in Java, Python (FastAPI), JavaScript, Node.js, and MongoDB. Explore verified GitHub projects, AI voice telephony, and web applications.">
+    <meta name="keywords" content="Tej Desai, Full Stack Developer, Software Engineer, Java Developer, Python FastAPI, MERN Stack, MCA Student, Portfolio">
+    <meta name="author" content="Tej Dipak Desai">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
-    <meta property="og:title" content="Portfolio - Creative Developer">
-    <meta property="og:description" content="Creative Developer Portfolio">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Tej Desai | Full Stack & Software Developer Portfolio">
+    <meta property="og:description" content="MCA Scholar & Full Stack Developer building enterprise AI voice platforms, web security tools, and modern web applications.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@lovable_dev">
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    <meta property="og:url" content="https://github.com/tejdesai1256">
+    <meta property="og:image" content="me.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-weight=%22bold%22 fill=%22%2338bdf8%22>&lt;/&gt;</text></svg>">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <div class="nav-content">
-                <div class="nav-brand">
-                    <span class="brand-text">TEJ DIPAK DESAI</span>
-                </div>
-                
-                <!-- Desktop Menu -->
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Navigation -->
+    <header class="header">
+        <nav id="navbar" class="navbar" aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-brand" aria-label="Tej Desai Home">
+                    <span class="brand-code">&lt;</span>
+                    <span class="brand-name">TEJ DESAI</span>
+                    <span class="brand-code">/&gt;</span>
+                </a>
+
+                <!-- Desktop Links -->
                 <div class="nav-menu desktop-menu">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
                     <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#tracker-demo" class="nav-link">Live Demo</a>
+                    <a href="#principles" class="nav-link">Principles</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
+
+                <!-- Action Buttons -->
+                <div class="nav-actions">
+                    <a href="resume.pdf" class="btn btn-sm btn-outline btn-resume" target="_blank" rel="noopener noreferrer" download="Tej_Desai_Resume.pdf" title="Download Verified Resume">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Resume</span>
+                    </a>
+
+                    <!-- Mobile Hamburger -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
+                </div>
             </div>
-            
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
+
+            <!-- Mobile Drawer -->
+            <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
                 <a href="#home" class="mobile-nav-link">Home</a>
-                <a href="#about" class="mobile-nav-link">About</a>
-                <a href="#projects" class="mobile-nav-link">Projects</a>
-                <a href="#skills" class="mobile-nav-link">Skills</a>
-                <a href="#contact" class="mobile-nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <meta property="og:title" content="Portfolio - Creative Developer" />
-    <meta property="og:description" content="Creative Developer Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-circle hero-circle-1"></div>
-            <div class="hero-circle hero-circle-2"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Creative</span>
-                    <span class="title-gradient">Developer</span>
-                </h1>
-                
-                <p class="hero-description">
-                    I craft exceptional digital experiences through innovative design and cutting-edge technology
-                </p>
-                
-                <div class="hero-buttons">
-  <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Projects</button>
-  <button class="btn btn-outline" onclick="scrollToSection('contact')">Get In Touch</button>
-</div>
-
-
-<script>
-  function scrollToSection(sectionId) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
-
-                
-                <div class="hero-social">
-                    <a href="https://github.com/tejdesai1256" class="social-link">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                <a href="#about" class="mobile-nav-link">About Me</a>
+                <a href="#experience" class="mobile-nav-link">Experience & Education</a>
+                <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+                <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+                <a href="#tracker-demo" class="mobile-nav-link">Job Tracker Demo</a>
+                <a href="#principles" class="mobile-nav-link">What I Bring</a>
+                <a href="#contact" class="mobile-nav-link">Contact Me</a>
+                <div class="mobile-resume-wrapper">
+                    <a href="resume.pdf" class="btn btn-primary btn-full" target="_blank" rel="noopener noreferrer" download="Tej_Desai_Resume.pdf">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tej-desai-020b4625a" class="social-link">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox" class="social-link">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
+                        Download Resume (PDF)
                     </a>
                 </div>
             </div>
-            
-            <div class="scroll-indicator">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                    <polyline points="19,12 12,19 5,12"></polyline>
-                </svg>
-            </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-header-container">
-    <div class="section-header">
-        <h2 class="section-title">
-            About <span class="gradient-text">Me</span>
-        </h2>
-        <p class="section-description">
-            BCA graduate with a passion for coding and problem-solving. Skilled in Java, and web development. Eager to contribute to innovative tech projects and grow as a software developer. Always curious, always learning.
-        </p>
-    </div>
-
-    <!-- Positioned Photo -->
-    <img src="me.jpg" alt="About Me Photo" class="corner-photo">
-</div>
-
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16,18 22,12 16,6"></polyline>
-                            <polyline points="8,6 2,12 8,18"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Clean Code</h3>
-                    <p class="feature-description">Writing maintainable, scalable, and efficient code that stands the test of time.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Innovation</h3>
-                    <p class="feature-description">Always exploring new technologies and creative solutions to complex problems.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Performance</h3>
-                    <p class="feature-description">Optimizing every aspect of the user experience for lightning-fast performance.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Collaboration</h3>
-                    <p class="feature-description">Working closely with teams to bring ambitious ideas to life.</p>
-                </div>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-subtitle">My Journey</h3>
-                    <p class="about-paragraph">
-                        Started as a passionate BCA student with a curiosity for how things work behind the screen, I found myself drawn to the world of development and design. From building basic projects in college to exploring real-world applications, each step deepened my love for creating digital solutions that matter.
-
-Over time, I've worked with various technologies, refining my skills and expanding my understanding of what makes a great digital product. Every project has taught me something new—about code, users, and the power of good design.
-
-Today, I’m focused on crafting digital experiences that are not only visually compelling but also intuitive and impactful. I believe technology should serve people, and my goal is to build applications that do exactly that—solve real problems and make everyday interactions smoother and more enjoyable.
-                    </p>
-                    <p class="about-paragraph">
-                        Today, I focus on creating applications that not only look great but also provide 
-                        exceptional user experiences. I believe that the best code is the one that solves 
-                        real problems and makes people's lives easier.
-                    </p>
-                </div>
-                
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            
-            <div class="section-header">
-                <h2 class="section-title">
-                    Featured <span class="gradient-text">Projects</span>
-                </h2>
-                <p class="section-description">
-                    A showcase of my recent work, demonstrating expertise across various technologies 
-                    and domains. Each project represents a unique challenge and creative solution.
-                </p>
-            </div>
-        
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Screenshot 2025-06-02 223112.png" alt="E-Commerce Platform">
-                        <div class="project-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Virtual Assistant</h3>
-                        <p class="project-description">
-                          Built a voice-controlled virtual assistant using HTML, CSS, JavaScript, with backend support from PHP and MySQL (XAMPP). The assistant handles voice commands to open websites, respond to queries (e.g., time, date, basic questions), and includes sign-in/sign-up functionality with database integration.
-
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Html</span>
-                            <span class="tech-tag">css</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Php</span>
-  
-                            <span class="tech-tag">Sql</span>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero section-spacing">
+            <div class="hero-ambient-glow" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    <!-- Left Hero Content -->
+                    <div class="hero-text-col">
+                        <div class="status-pill">
+                            <span class="pulse-dot"></span>
+                            <span>Available for Software Developer & Full Stack Roles</span>
                         </div>
-                        <div class="project-links">
-                            <button class="btn btn-outline btn-sm">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="gradient-text">Tej Desai</span>
+                            <span class="title-sub">— Developer &amp; Problem Solver.</span>
+                        </h1>
+
+                        <p class="hero-tagline">
+                            MCA Scholar &amp; Full Stack Engineer with hands-on experience building enterprise AI voice platforms, web security tools, and modern web applications.
+                        </p>
+
+                        <p class="hero-summary">
+                            Proficient in <strong>Java</strong>, <strong>Python (FastAPI)</strong>, <strong>JavaScript (ES6+)</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. Proven track record across two internships in full-stack feature delivery, REST API architecture, and database integration.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Projects</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
-                                <a href="https://github.com/tejdesai1256/Personal-AI-Assistant" class="code">
-                                Code
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                            <a href="resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" download="Tej_Desai_Resume.pdf">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+
+                        <div class="hero-social-row">
+                            <span class="social-label">Verified Links:</span>
+                            <div class="social-links-list">
+                                <a href="https://github.com/tejdesai1256" target="_blank" rel="noopener noreferrer" class="social-badge" title="GitHub Profile">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    <span>GitHub</span>
                                 </a>
-                            </button>
-                            <button class="btn btn-primary btn-sm">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                <a href="https://www.linkedin.com/in/tej-desai-020b4625a/" target="_blank" rel="noopener noreferrer" class="social-badge" title="LinkedIn Profile">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:desaitej1256@gmail.com" class="social-badge" title="Send Email">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span>Email</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Technical Terminal Window -->
+                    <div class="hero-terminal-col">
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <div class="terminal-tabs">
+                                    <button class="terminal-tab active" data-tab="arch">VoiceAgent.py</button>
+                                    <button class="terminal-tab" data-tab="profile">DeveloperProfile.json</button>
+                                </div>
+                                <span class="terminal-badge">Python 3.11</span>
+                            </div>
+
+                            <div class="terminal-body" id="tab-arch">
+                                <pre><code><span class="code-comment"># AI Voice Calling &amp; Telephony Pipeline</span>
+<span class="code-keyword">from</span> fastapi <span class="code-keyword">import</span> FastAPI, WebSocket
+<span class="code-keyword">from</span> telephony <span class="code-keyword">import</span> ExotelAgentStream
+<span class="code-keyword">from</span> ai.speech <span class="code-keyword">import</span> FasterWhisperEngine
+<span class="code-keyword">from</span> ai.llm <span class="code-keyword">import</span> OllamaGemma3
+
+app = FastAPI(title=<span class="code-string">"AI Voice Agent"</span>)
+
+<span class="code-decorator">@app.websocket</span>(<span class="code-string">"/api/telephony/stream/{call_id}"</span>)
+<span class="code-keyword">async def</span> <span class="code-func">handle_voice_stream</span>(ws: WebSocket, call_id: str):
+    <span class="code-keyword">await</span> ws.accept()
+    vad = VoiceActivityDetector(silence_ms=<span class="code-number">750</span>)
+    
+    <span class="code-keyword">async for</span> chunk <span class="code-keyword">in</span> ws.iter_bytes():
+        <span class="code-keyword">if</span> vad.has_speech(chunk):
+            transcript = <span class="code-keyword">await</span> FasterWhisper.transcribe(chunk)
+            response = <span class="code-keyword">await</span> OllamaGemma3.generate(transcript)
+            audio_out = <span class="code-keyword">await</span> PiperTTS.synthesize(response)
+            <span class="code-keyword">await</span> ws.send_bytes(audio_out)</code></pre>
+                            </div>
+
+                            <div class="terminal-body hidden" id="tab-profile">
+                                <pre><code>{
+  <span class="code-string">"candidate"</span>: <span class="code-string">"Tej Dipak Desai"</span>,
+  <span class="code-string">"role"</span>: <span class="code-string">"Full Stack / Software Developer"</span>,
+  <span class="code-string">"education"</span>: {
+    <span class="code-string">"mca"</span>: <span class="code-string">"IICMR Pune (2025-Present)"</span>,
+    <span class="code-string">"bca"</span>: <span class="code-string">"Balasaheb Desai College (CGPA: 7.72)"</span>
+  },
+  <span class="code-string">"internships"</span>: [
+    <span class="code-string">"Job Jockey (Full Stack Intern, 04/2026-09/2026)"</span>,
+    <span class="code-string">"ITpreneur (Java Intern, 01/2025-04/2025)"</span>
+  ],
+  <span class="code-string">"stack"</span>: [<span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"FastAPI"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"MongoDB"</span>],
+  <span class="code-string">"open_to_relocate"</span>: <span class="code-boolean">true</span>
+}</code></pre>
+                            </div>
+
+                            <div class="terminal-footer">
+                                <span class="terminal-status"><span class="status-indicator"></span> Ready for recruitment evaluation</span>
+                                <span class="terminal-stat">10+ Repos Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section-spacing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Background &amp; Philosophy</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-description">
+                        Computer Applications scholar with hands-on development experience, practical engineering internships, and a passion for crafting software that solves real problems.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Photo & Quick Facts Card -->
+                    <div class="about-photo-card">
+                        <div class="photo-wrapper">
+                            <img src="me.jpg" alt="Tej Dipak Desai - Software Developer" class="profile-image">
+                            <div class="photo-overlay-badge">
+                                <span class="badge-role">Tej Dipak Desai</span>
+                                <span class="badge-sub">Full Stack &amp; Software Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="quick-facts-box">
+                            <div class="fact-item">
+                                <span class="fact-number">MCA</span>
+                                <span class="fact-label">Pursuing @ IICMR Pune</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-number">7.72</span>
+                                <span class="fact-label">BCA CGPA Grad</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-number">2</span>
+                                <span class="fact-label">Completed Internships</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-number">10+</span>
+                                <span class="fact-label">Real GitHub Repos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Narrative & Approach Content -->
+                    <div class="about-narrative">
+                        <div class="narrative-card">
+                            <h3 class="narrative-title">My Development Journey</h3>
+                            <p class="narrative-text">
+                                My software journey began with a strong foundation in Computer Applications, completing my <strong>BCA at Balasaheb Desai College (CGPA 7.72)</strong> and currently pursuing my <strong>Master of Computer Applications (MCA) at IICMR Pune</strong>.
+                            </p>
+                            <p class="narrative-text">
+                                Over the past two years, I expanded from foundational programming in Java and C++ to architecting full-stack systems. During my <strong>Java Developer Internship at ITpreneur</strong>, I honed core Object-Oriented principles, exception handling, and SDLC workflows. Following that, as a <strong>Full Stack Developer Intern at Job Jockey</strong>, I built and maintained responsive web platforms, designed database schemas, and integrated REST APIs.
+                            </p>
+                        </div>
+
+                        <div class="narrative-card">
+                            <h3 class="narrative-title">How I Approach Problem-Solving</h3>
+                            <p class="narrative-text">
+                                I believe engineering excellence is rooted in <em>clarity, maintainability, and user focus</em>. Rather than chasing superficial hype, I prioritize clean architectural patterns, robust error handling, secure data flow, and responsive interfaces that perform reliably under edge conditions.
+                            </p>
+                            <p class="narrative-text">
+                                When tackling a technical challenge—whether integrating telephony WebSockets in Python FastAPI, stopping SSRF attacks in a security scanner, or organizing state across a MERN app—I break systems down into modular components, test methodically, and document thoroughly.
+                            </p>
+                        </div>
+
+                        <!-- Core Interest Pillars -->
+                        <div class="interest-pillars-grid">
+                            <div class="interest-pill">
+                                <div class="interest-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="interest-heading">Full Stack Web Apps</h4>
+                                    <p class="interest-desc">Node.js, Express, React, and MongoDB solutions with secure authentication.</p>
+                                </div>
+                            </div>
+
+                            <div class="interest-pill">
+                                <div class="interest-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="interest-heading">AI &amp; Voice Telephony</h4>
+                                    <p class="interest-desc">FastAPI backends with Faster-Whisper, local LLMs, and real-time audio streams.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="experience section-spacing bg-surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Career Timeline</span>
+                    <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+                    <p class="section-description">
+                        Verified professional background from completed software internships and accredited university programs.
+                    </p>
+                </div>
+
+                <div class="timeline-grid">
+                    <!-- Column 1: Work Experience -->
+                    <div class="timeline-column">
+                        <div class="column-header">
+                            <div class="column-icon icon-work">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                 </svg>
-                                <a href="https://tejdesai-personalaiassistant.netlify.app/" class="code">
+                            </div>
+                            <h3 class="column-title">Work Experience</h3>
+                        </div>
+
+                        <div class="timeline-items">
+                            <!-- Job Jockey Intern -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">04/2026 – 09/2026</span>
+                                    <span class="timeline-badge badge-primary">Internship</span>
+                                </div>
+                                <h4 class="timeline-role">Full Stack Developer Intern</h4>
+                                <h5 class="timeline-company">Job Jockey</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Developed and maintained responsive web applications using HTML, CSS, JavaScript, and backend integration technologies.</li>
+                                    <li>Collaborated with engineering team members to implement new user features and diagnose system bugs.</li>
+                                    <li>Built and connected RESTful endpoints with databases for real-time candidate and application management.</li>
+                                    <li>Participated in code reviews, feature testing, and software quality assurance cycles.</li>
+                                </ul>
+                                <div class="timeline-tags">
+                                    <span class="tag">HTML5/CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <!-- ITpreneur Java Intern -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">01/2025 – 04/2025</span>
+                                    <span class="timeline-badge badge-secondary">Internship</span>
+                                </div>
+                                <h4 class="timeline-role">Java Developer Intern</h4>
+                                <h5 class="timeline-company">ITpreneur • Pune, Maharashtra</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Gained intensive hands-on experience in Core Java programming: OOP, Exception Handling, and Collections Framework.</li>
+                                    <li>Developed, debugged, and tested Java-based applications using Eclipse IDE.</li>
+                                    <li>Utilized Git and GitHub for team version control and collaborative development.</li>
+                                    <li>Applied Software Development Lifecycle (SDLC) best practices and algorithmic optimization.</li>
+                                </ul>
+                                <div class="timeline-tags">
+                                    <span class="tag">Core Java</span>
+                                    <span class="tag">OOP</span>
+                                    <span class="tag">Collections</span>
+                                    <span class="tag">Eclipse IDE</span>
+                                    <span class="tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Education -->
+                    <div class="timeline-column">
+                        <div class="column-header">
+                            <div class="column-icon icon-edu">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="column-title">Education</h3>
+                        </div>
+
+                        <div class="timeline-items">
+                            <!-- MCA -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">2025 – Present</span>
+                                    <span class="timeline-badge badge-active">In Progress</span>
+                                </div>
+                                <h4 class="timeline-role">Master of Computer Applications (MCA)</h4>
+                                <h5 class="timeline-company">Institute Of Industrial And Computer Management And Research (IICMR)</h5>
+                                <p class="timeline-location">Pune, Maharashtra</p>
+                                <p class="timeline-desc">
+                                    Advanced coursework in Enterprise Application Development, Cloud Computing, Database Architectures, and Software Engineering Methodologies.
+                                </p>
+                            </div>
+
+                            <!-- BCA -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">2022 – 2025</span>
+                                    <span class="timeline-badge badge-success">Completed • CGPA: 7.72</span>
+                                </div>
+                                <h4 class="timeline-role">Bachelor of Computer Applications (BCA)</h4>
+                                <h5 class="timeline-company">Balasaheb Desai College</h5>
+                                <p class="timeline-location">Patan, Maharashtra</p>
+                                <p class="timeline-desc">
+                                    Rigorous grounding in Data Structures, Object-Oriented Programming, Database Management Systems (RDBMS), Operating Systems, and Web Development fundamentals. Graduated with a strong <strong>7.72 CGPA</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills section-spacing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Proven Stack</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <p class="section-description">
+                        Technologies and tools verified by real codebase implementations across GitHub repositories and professional internships.
+                    </p>
+                </div>
+
+                <div class="skills-category-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">⚡</span>
+                            <h3 class="cat-title">Programming Languages</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> Java (OOP, Collections)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Python (FastAPI, Async)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> JavaScript (ES6+)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> PHP</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> C &amp; C++</div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🎨</span>
+                            <h3 class="cat-title">Frontend Development</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> HTML5 &amp; Semantic Web</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> CSS3 &amp; Modern Flex/Grid</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> JavaScript (DOM, Fetch, Async)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> React.js Components</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Bootstrap 5</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Responsive Mobile-First Design</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & APIs -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">⚙️</span>
+                            <h3 class="cat-title">Backend &amp; APIs</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> Node.js &amp; Express</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> FastAPI (Python ASGI)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> RESTful API Design</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> JWT Authentication &amp; Cookies</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Real-Time WebSockets</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Telephony &amp; Voice Streaming</div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🗄️</span>
+                            <h3 class="cat-title">Databases &amp; Storage</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> MongoDB &amp; Mongoose</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> MySQL &amp; Relational Schema</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> SQLite</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> PyMongo Integration</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Query Optimization &amp; Indexing</div>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools & DevOps -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🛠️</span>
+                            <h3 class="cat-title">Developer Tools &amp; Platforms</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> Git &amp; GitHub Version Control</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> VS Code &amp; Eclipse IDE</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Postman API Testing</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Render &amp; Netlify Deployment</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Ngrok Tunneling &amp; Webhooks</div>
+                        </div>
+                    </div>
+
+                    <!-- Core Strengths -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🧠</span>
+                            <h3 class="cat-title">Engineering Core Strengths</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <div class="skill-chip"><span class="chip-dot"></span> Object-Oriented Programming (OOP)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Web Application Security (XSS, SQLi, SSRF)</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Software Testing &amp; Bug Diagnosis</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Problem Solving &amp; Algorithmic Thinking</div>
+                            <div class="skill-chip"><span class="chip-dot"></span> Collaborative Team SDLC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects section-spacing bg-surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Real Implementations</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-description">
+                        Curated from my public GitHub repositories. Each project represents verifiable source code, real problem-solving, and practical system architecture.
+                    </p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filter-bar" role="tablist" aria-label="Project Categories">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (6)</button>
+                    <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+                    <button class="filter-btn" data-filter="ai-systems" role="tab" aria-selected="false">AI &amp; Systems</button>
+                    <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: AI Voice Agent Calling Platform -->
+                    <article class="project-card" data-category="ai-systems fullstack">
+                        <div class="project-image-box">
+                            <img src="project-voice-agent.jpg" alt="AI Voice Calling Platform Dashboard" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-accent">Production Architecture</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">AI Voice Calling &amp; Telephony Platform</h3>
+                                <span class="project-stars">Python • FastAPI</span>
+                            </div>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Automates enterprise customer calling with sub-second voice response, eliminating carrier credit waste via local mock adapters and handling real-time audio streams.
+                            </p>
+                            <p class="project-desc">
+                                Enterprise telephony system integrating real-time Exotel AgentStream WebSockets, local Faster-Whisper speech-to-text, Ollama Gemma 3 LLM inference, Piper/Edge-TTS synthesis, VAD, and IVR language routing (English, Hindi, Marathi).
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">Faster-Whisper</span>
+                                <span class="tech-pill">Ollama Gemma 3</span>
+                                <span class="tech-pill">WebSockets</span>
+                                <span class="tech-pill">SQLite / MySQL</span>
+                                <span class="tech-pill">JWT</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-sm btn-primary btn-modal-trigger" data-project="voice-agent">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    View Architecture
+                                </button>
+                                <a href="https://github.com/tejdesai1256/AI-Voice_Agent" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: ShieldScope Web Security Scanner -->
+                    <article class="project-card" data-category="fullstack ai-systems">
+                        <div class="project-image-box">
+                            <img src="project-shield-scope.jpg" alt="ShieldScope Web Security Scanner Dashboard" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-emerald">Deployed Scanner</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">ShieldScope — Web Security Scanner</h3>
+                                <span class="project-stars">Python • MongoDB</span>
+                            </div>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Detects critical website vulnerabilities before deployment, preventing server-side request forgery (SSRF) and providing automated PDF audit reports.
+                            </p>
+                            <p class="project-desc">
+                                Automated web vulnerability scanner built with FastAPI, PyMongo, and BeautifulSoup. Executes checks for SQL Injection, XSS, insecure HTTP headers, resolves DNS to block private IP SSRF, and exports executive reports via ReportLab.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">MongoDB</span>
+                                <span class="tech-pill">BeautifulSoup4</span>
+                                <span class="tech-pill">dnspython</span>
+                                <span class="tech-pill">PyJWT</span>
+                                <span class="tech-pill">ReportLab</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-sm btn-primary btn-modal-trigger" data-project="shield-scope">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    View Architecture
+                                </button>
+                                <a href="https://github.com/tejdesai1256/shield-scope" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: CareerPulse MERN Job Tracker -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-image-box">
+                            <img src="project-job-tracker.jpg" alt="CareerPulse MERN Job Tracker Dashboard" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-cyan">Live Interactive Demo</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">CareerPulse — MERN Job Tracker</h3>
+                                <span class="project-stars">React • Express • Mongo</span>
+                            </div>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Eliminates chaotic job application tracking with a centralized Kanban pipeline, real-time KPI metrics, search filtering, and offline sync.
+                            </p>
+                            <p class="project-desc">
+                                Full-stack MERN application with complete CRUD operations, status management (Wishlist, Applied, Interviewing, Offered, Rejected), salary range tracking, and built-in interactive demo below.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express</span>
+                                <span class="tech-pill">MongoDB</span>
+                                <span class="tech-pill">REST APIs</span>
+                                <span class="tech-pill">LocalStorage</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="#tracker-demo" class="btn btn-sm btn-primary">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    Try Live Demo
+                                </a>
+                                <button class="btn btn-sm btn-outline btn-modal-trigger" data-project="job-tracker">
+                                    Details &amp; Code
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Job Jockey Internship & Career Platform -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-image-box">
+                            <img src="project-job-jockey.jpg" alt="Job Jockey Internship Platform Dashboard" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-primary">Internship Platform</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">Job Jockey — Internship Platform</h3>
+                                <span class="project-stars">Node.js • Express</span>
+                            </div>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Connects student candidates with verified early-career opportunities through role-filtered job feeds and secure authentication.
+                            </p>
+                            <p class="project-desc">
+                                End-to-end web portal featuring Express backend, MongoDB persistence, cookie-based JWT authorization, responsive candidate dashboard, and structured application tracking routes.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express</span>
+                                <span class="tech-pill">MongoDB</span>
+                                <span class="tech-pill">JWT &amp; Cookies</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">HTML5/CSS3</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-sm btn-primary btn-modal-trigger" data-project="job-jockey">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    View Architecture
+                                </button>
+                                <a href="https://github.com/tejdesai1256/job-jockey-intern-platform" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Kiwi Personal AI Voice Assistant -->
+                    <article class="project-card" data-category="frontend ai-systems">
+                        <div class="project-image-box">
+                            <img src="Screenshot 2025-06-02 223112.png" alt="Kiwi Personal AI Assistant Screenshot" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-success">Live on Netlify</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">Kiwi — Personal AI Voice Assistant</h3>
+                                <span class="project-stars">Web Speech API</span>
+                            </div>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Provides hands-free web search, site navigation, and voice interaction in the browser with account session logging.
+                            </p>
+                            <p class="project-desc">
+                                Browser voice assistant utilizing Web Speech Recognition and Synthesis APIs, custom speech command triggers, and PHP/MySQL session authentication. Deployed live on Netlify.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Web Speech API</span>
+                                <span class="tech-pill">PHP</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">Netlify</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://tejdesai-personalaiassistant.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
                                     Live Demo
                                 </a>
-                            
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Add more project cards here with similar structure -->
-            </div>
-            
-            <div class="projects-footer">
-                <button class="btn btn-outline btn-lg">
-                    <a href="https://github.com/tejdesai1256" class="code">
-                     View All Projects</a></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">
-                Technical <span class="gradient-text">Skills</span>
-            </h2>
-            <p class="section-description">
-                A comprehensive overview of my technical expertise and proficiency levels 
-                across various technologies and frameworks.
-            </p>
-        </div>
-        
-        <div class="skills-grid">
-            <!-- Frontend Category -->
-            <div class="skill-category">
-                <h3 class="category-title">Frontend</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                       
-                       
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">HTML/CSS</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Bootstrap</span>
-                            <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backend Category -->
-            <div class="skill-category">
-                <h3 class="category-title">Backend</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">PHP</span>
-                            <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">MySQL</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Programming Languages Category -->
-            <div class="skill-category">
-                <h3 class="category-title">Programming Languages</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">C</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">C++</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Java</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                </div>
-         
-
-            <!-- Tools & Platforms Category -->
-            <div class="skill-category">
-                <h3 class="category-title">Tools & Platforms</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Git</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">GitHub</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">VS Code</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Eclipse</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Soft Skills Category -->
-            <div class="skill-category">
-                <h3 class="category-title">Soft Skills</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Problem Solving</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Team Collaboration</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Communication</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</div>
-        </div>
-    </div>
-    
-</section>
-
-
-    <!-- Contact Section hi -->
-    <!-- Your existing Contact Section HTML -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    Get In <span class="gradient-text">Touch</span>
-                </h2>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-subtitle">Let's Connect</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:desaitej1256@gmail.com" class="contact-value">desaitej1256@gmail.com</a>
+                                <a href="https://github.com/tejdesai1256/Personal-AI-Assistant" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub Code
+                                </a>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
+                    </article>
+
+                    <!-- Project 6: Spotify Web Player Clone -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-image-box">
+                            <img src="project-spotify.jpg" alt="Spotify Web Player UI Preview" class="project-thumb" loading="lazy">
+                            <span class="card-status-badge badge-secondary">Frontend UI</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-header-row">
+                                <h3 class="project-title">Spotify Web Player Clone</h3>
+                                <span class="project-stars">HTML5 • CSS3 • JS</span>
                             </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Phone</span>
-                                <a href="tel:+919579228277" class="contact-value">+91 9579228277</a>
+                            <p class="project-problem">
+                                <strong>Problem Solved:</strong> Replicates a complex, modern media player UI with responsive layout architecture and responsive DOM audio control.
+                            </p>
+                            <p class="project-desc">
+                                Pixel-accurate Spotify dark web interface featuring custom audio playback controls (play, pause, next, prev), track progress seek bar, volume slider, playlist directory, and mobile responsive layout.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Audio API</span>
+                                <span class="tech-pill">Responsive UI</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-sm btn-primary btn-modal-trigger" data-project="spotify">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    View Architecture
+                                </button>
+                                <a href="https://github.com/tejdesai1256/spotify_clone" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub Code
+                                </a>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Patan,Satara</span>
-                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Interactive Showcase: CareerPulse MERN Job Tracker -->
+        <section id="tracker-demo" class="tracker-section section-spacing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Interactive Live Feature</span>
+                    <h2 class="section-title">CareerPulse <span class="gradient-text">Job Application Tracker</span></h2>
+                    <p class="section-description">
+                        Try a live functional demonstration of the MERN Application Tracker right here. Add an application, update its pipeline status, filter by stage, and observe real-time metrics.
+                    </p>
+                </div>
+
+                <div class="tracker-app-card">
+                    <!-- Dashboard Metric Cards -->
+                    <div class="tracker-metrics-grid">
+                        <div class="tracker-stat-box">
+                            <span class="stat-label">Total Applications</span>
+                            <span class="stat-val" id="metric-total">4</span>
+                        </div>
+                        <div class="tracker-stat-box stat-interview">
+                            <span class="stat-label">Interviewing</span>
+                            <span class="stat-val" id="metric-interviewing">1</span>
+                        </div>
+                        <div class="tracker-stat-box stat-offers">
+                            <span class="stat-label">Offers Extended</span>
+                            <span class="stat-val" id="metric-offers">1</span>
+                        </div>
+                        <div class="tracker-stat-box stat-applied">
+                            <span class="stat-label">Applied / Pending</span>
+                            <span class="stat-val" id="metric-applied">2</span>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
+
+                    <!-- Toolbar: Search, Filters, Add Button -->
+                    <div class="tracker-toolbar">
+                        <div class="tracker-search-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <input type="text" id="trackerSearch" placeholder="Search by company or role..." aria-label="Search applications">
+                        </div>
+
+                        <div class="tracker-filter-tags">
+                            <button class="t-filter active" data-status="all">All</button>
+                            <button class="t-filter" data-status="applied">Applied</button>
+                            <button class="t-filter" data-status="interviewing">Interviewing</button>
+                            <button class="t-filter" data-status="offered">Offered</button>
+                            <button class="t-filter" data-status="rejected">Rejected</button>
+                        </div>
+
+                        <button class="btn btn-sm btn-primary" id="openAddJobBtn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Add Job
+                        </button>
+                    </div>
+
+                    <!-- Inline Add Form (Hidden by default) -->
+                    <form id="addJobForm" class="add-job-form hidden">
+                        <h4 class="form-title">Track New Job Application</h4>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+                                <label for="jobCompany">Company Name</label>
+                                <input type="text" id="jobCompany" placeholder="e.g. Google, Infosys, Stripe" required>
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+                                <label for="jobRole">Role Title</label>
+                                <input type="text" id="jobRole" placeholder="e.g. Full Stack Developer, SDE 1" required>
                             </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jobStatus">Pipeline Stage</label>
+                                <select id="jobStatus">
+                                    <option value="applied">Applied</option>
+                                    <option value="interviewing">Interviewing</option>
+                                    <option value="offered">Offered</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="wishlist">Wishlist</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobSalary">Salary / Location</label>
+                                <input type="text" id="jobSalary" placeholder="e.g. 6-8 LPA • Pune / Hybrid">
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Job Opportunity, Portfolio Feedback" required>
+                        <div class="form-actions-row">
+                            <button type="submit" class="btn btn-sm btn-primary">Save Application</button>
+                            <button type="button" class="btn btn-sm btn-ghost" id="cancelAddJobBtn">Cancel</button>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Write your message here... I'd love to hear from you!" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-lg btn-full">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-                            </svg>
-                            Send Message
-                        </button>
                     </form>
+
+                    <!-- Applications List Container -->
+                    <div class="tracker-cards-container" id="trackerCardsList">
+                        <!-- Populated dynamically via script.js -->
+                    </div>
+
+                    <div class="tracker-footer-note">
+                        <span>⚡ Built with interactive Vanilla JS &amp; LocalStorage. Companion Node/Express/Mongo backend is structured in <code>/job-tracker-mern</code>.</span>
+                        <button class="btn btn-link btn-sm" id="resetTrackerDataBtn">Reset Demo Data</button>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Project Opportunities & Roadmap (Section 4.F) -->
+        <section class="roadmap-section section-spacing bg-surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Engineering Roadmap</span>
+                    <h2 class="section-title">New Project <span class="gradient-text">Initiatives</span></h2>
+                    <p class="section-description">
+                        Targeted full-stack and AI project initiatives aligned with industry standards for software and MERN developer roles.
+                    </p>
+                </div>
+
+                <div class="roadmap-grid">
+                    <!-- Project Idea 1: MERN Job Application Tracker -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-header">
+                            <span class="roadmap-status status-ready">Functional Showcase</span>
+                            <span class="roadmap-category">Full Stack MERN</span>
+                        </div>
+                        <h3 class="roadmap-title">1. MERN Job Application Tracker</h3>
+                        <p class="roadmap-desc">
+                            React frontend, Node.js &amp; Express backend, and MongoDB database with JWT protected routes, candidate status pipeline (Applied, Interviewing, Offered), dashboard analytics, and resume link attachments.
+                        </p>
+                        <div class="roadmap-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="roadmap-status-footer">
+                            <span class="badge-success-subtle">✓ Live Interactive Demo Active Above</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Idea 2: AI-Powered Resume & JD Analyzer -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-header">
+                            <span class="roadmap-status status-planned">Planned Project</span>
+                            <span class="roadmap-category">AI / NLP Engineering</span>
+                        </div>
+                        <h3 class="roadmap-title">2. AI-Powered Resume &amp; JD Analyzer</h3>
+                        <p class="roadmap-desc">
+                            PDF resume text extraction pipeline, semantic keyword matching against job descriptions, and local Ollama / Groq LLM skill gap recommendations with a fallback demo mode.
+                        </p>
+                        <div class="roadmap-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PyMuPDF</span>
+                            <span>Ollama / Groq API</span>
+                            <span>React</span>
+                        </div>
+                        <div class="roadmap-status-footer">
+                            <span class="badge-planned-subtle">Architecture &amp; Schema Defined</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Idea 3: Real-Time Team Collaboration / Chat -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-header">
+                            <span class="roadmap-status status-planned">Planned Project</span>
+                            <span class="roadmap-category">Real-Time Systems</span>
+                        </div>
+                        <h3 class="roadmap-title">3. Real-Time Collaboration &amp; Chat App</h3>
+                        <p class="roadmap-desc">
+                            Multi-room chat with bidirectional WebSockets / Socket.IO, typing indicators, user online states, conversation history persistence in MongoDB, and JWT authentication.
+                        </p>
+                        <div class="roadmap-tech">
+                            <span>React</span>
+                            <span>Socket.IO</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="roadmap-status-footer">
+                            <span class="badge-planned-subtle">Specification Ready for Sprint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Bring / Engineering Principles -->
+        <section id="principles" class="principles section-spacing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Professional Standards</span>
+                    <h2 class="section-title">What I <span class="gradient-text">Bring</span></h2>
+                    <p class="section-description">
+                        Core engineering values demonstrated through project implementations and practical software internship experience.
+                    </p>
+                </div>
+
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Writing Clean, Maintainable Code</h3>
+                        <p class="principle-desc">
+                            I focus on descriptive naming, modular design patterns, strict error handling, and separation of concerns so codebases remain easy for teams to maintain and extend.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Responsive, Accessible UI</h3>
+                        <p class="principle-desc">
+                            Crafting web layouts that adapt seamlessly from mobile viewports to desktop monitors with semantic HTML, fluid typography, and accessible keyboard focus states.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+                                <line x1="8" y1="16" x2="8.01" y2="16"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                <line x1="16" y1="16" x2="16.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Frontend &amp; Backend Integration</h3>
+                        <p class="principle-desc">
+                            Hands-on familiarity binding React / Vanilla JS interfaces with Node.js and FastAPI backends, managing JWT sessions, cookies, and asynchronous REST / WebSocket channels.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Databases &amp; API Architecture</h3>
+                        <p class="principle-desc">
+                            Experienced in designing schema models in MongoDB and MySQL, optimizing queries, validating incoming payloads, and preventing security flaws like SQL Injection and SSRF.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Debugging &amp; Problem Solving</h3>
+                        <p class="principle-desc">
+                            Methodical approach to root cause analysis, inspecting logs, network traces, and edge case reproduction to solve practical production bugs efficiently.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="principle-title">Continuous Learning &amp; Adaptation</h3>
+                        <p class="principle-desc">
+                            Quick to pick up new frameworks, libraries, and protocols by reading documentation and building projects. Highly receptive to code reviews and feedback.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-spacing bg-surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Get In Touch</span>
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section-description">
+                        Interested in discussing software developer, frontend, or full-stack opportunities? Reach out via email, phone, or LinkedIn.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Verified Details & Quick Actions -->
+                    <div class="contact-info-col">
+                        <div class="contact-card">
+                            <h3 class="contact-col-title">Direct Contact Channels</h3>
+
+                            <!-- Email with Copy Button -->
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Email Address</span>
+                                    <a href="mailto:desaitej1256@gmail.com" class="channel-value">desaitej1256@gmail.com</a>
+                                </div>
+                                <button class="btn btn-xs btn-outline btn-copy-email" id="copyEmailBtn" title="Copy email to clipboard">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span id="copyEmailText">Copy</span>
+                                </button>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Mobile Phone</span>
+                                    <a href="tel:+919579228277" class="channel-value">+91 9579228277</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Current Location</span>
+                                    <span class="channel-value">Pune, Maharashtra, India</span>
+                                </div>
+                            </div>
+
+                            <!-- Professional Networks -->
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Profiles</span>
+                                    <div class="channel-links">
+                                        <a href="https://www.linkedin.com/in/tej-desai-020b4625a/" target="_blank" rel="noopener noreferrer" class="link-bold">LinkedIn Profile ↗</a>
+                                        <span class="divider">•</span>
+                                        <a href="https://github.com/tejdesai1256" target="_blank" rel="noopener noreferrer" class="link-bold">GitHub Profile ↗</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Verified Contact Form -->
+                    <div class="contact-form-col">
+                        <div class="contact-card">
+                            <h3 class="contact-col-title">Send A Direct Message</h3>
+                            <p class="contact-form-notice">
+                                Submitting this form prepares a pre-filled direct message addressed to <code>desaitej1256@gmail.com</code> with client-side validation.
+                            </p>
+
+                            <form class="contact-form" id="contactForm" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactFirstName">First Name <span class="required">*</span></label>
+                                        <input type="text" id="contactFirstName" name="firstName" placeholder="e.g. John" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactLastName">Last Name <span class="required">*</span></label>
+                                        <input type="text" id="contactLastName" name="lastName" placeholder="e.g. Doe" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Your Work Email <span class="required">*</span></label>
+                                    <input type="email" id="contactEmail" name="email" placeholder="name@company.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject">Subject <span class="required">*</span></label>
+                                    <input type="text" id="contactSubject" name="subject" placeholder="e.g. Full Stack Developer Opportunity at [Company]" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage">Message <span class="required">*</span></label>
+                                    <textarea id="contactMessage" name="message" rows="4" placeholder="Hello Tej, I came across your portfolio and would like to discuss..." required></textarea>
+                                </div>
+
+                                <div class="form-buttons-stack">
+                                    <button type="submit" class="btn btn-primary btn-full" id="submitContactBtn">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                        <span>Send Message (Email Client)</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline btn-full" id="openGmailBtn">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span>Open Directly in Gmail Web</span>
+                                    </button>
+                                </div>
+
+                                <div class="form-feedback hidden" id="formFeedback" role="alert"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal Container -->
+    <div class="modal-overlay hidden" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+            <div class="modal-content" id="modalDynamicContent">
+                <!-- Injected dynamically via script.js -->
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Add this script block -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-
-                    // Get form values
-                    const firstName = document.getElementById('firstName').value;
-                    const lastName = document.getElementById('lastName').value;
-                    const senderEmail = document.getElementById('email').value; // User's email
-                    const subject = document.getElementById('subject').value;
-                    const message = document.getElementById('message').value;
-
-                    // Your email address where you want to receive the messages
-                    const recipientEmail = 'desaitej1256@gmail.com';
-
-                    // Construct the email body
-                    // Using \r\n for new lines as it's more broadly compatible in mail clients
-                    let emailBody = `Hello Tej,\n\nYou have a new message from your portfolio contact form:\n\n`;
-                    emailBody += `From: ${firstName} ${lastName}\n`;
-                    emailBody += `Email: ${senderEmail}\n`; // The email address of the person contacting you
-                    emailBody += `Subject: ${subject}\n\n`;
-                    emailBody += `Message:\n${message}\n\n`;
-                    emailBody += `Best regards,\n${firstName} ${lastName}`;
-
-                    // ---- Option 1: Use mailto: (opens default email client) ----
-                    // const encodedSubject = encodeURIComponent(subject);
-                    // const encodedBody = encodeURIComponent(emailBody);
-                    // const mailtoLink = `mailto:${recipientEmail}?subject=${encodedSubject}&body=${encodedBody}`;
-                    
-                    // Attempt to open the mail client
-                    // window.location.href = mailtoLink;
-
-                    // ---- Option 2: Use Gmail compose URL (opens Gmail in a new tab) ----
-                    // Uncomment this section and comment out Option 1 if you prefer Gmail
-                    
-                    const gmailSubject = encodeURIComponent(subject);
-                    const gmailBody = encodeURIComponent(emailBody);
-                    // Note: For Gmail, 'to' is already part of the base URL. 'su' for subject, 'body' for body.
-                    // You can also add 'cc' or 'bcc' if needed.
-                    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}&su=${gmailSubject}&body=${gmailBody}`;
-                    
-                    // Open Gmail in a new tab
-                    window.open(gmailLink, '_blank');
-                    
-
-                    // Optional: Provide feedback to the user or reset the form
-                    // alert('Your email client should open shortly. If not, please check your pop-up blocker or try again.');
-                    // contactForm.reset(); // Clears the form after submission
-                });
-            } else {
-                console.error("Contact form with ID 'contactForm' not found.");
-            }
-        });
-    </script>
+    <!-- Toast Notification Element -->
+    <div class="toast-container" id="toastNotification" role="status" aria-live="polite"></div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">Portfolio</h3>
-                    <p class="footer-description">
-                        Crafting digital experiences with passion and precision.
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <a href="#home" class="footer-logo">
+                        <span class="brand-code">&lt;</span>
+                        <span>TEJ DESAI</span>
+                        <span class="brand-code">/&gt;</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Full Stack Developer &amp; MCA Scholar. Passionate about clean code, robust backend architectures, and production AI platforms.
                     </p>
                 </div>
-                
-                <div class="footer-social">
-                    <a href="https://github.com/tejdesai1256" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tej-desai-020b4625a" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=desaitej1256@gmail.com" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="social-link">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-        <polyline points="22,6 12,13 2,6"></polyline>
-    </svg>
-</a>
 
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tracker-demo">Job Tracker Demo</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
 
-
-
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Verified Profiles</h4>
+                    <ul class="footer-nav">
+                        <li><a href="https://github.com/tejdesai1256" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></li>
+                        <li><a href="https://www.linkedin.com/in/tej-desai-020b4625a/" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a></li>
+                        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer" download="Tej_Desai_Resume.pdf">Download Resume (PDF) ↗</a></li>
+                        <li><a href="mailto:desaitej1256@gmail.com">desaitej1256@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    Made with ❤️ and code.
+                    &copy; <span id="currentYear">2026</span> Tej Dipak Desai. Built with standard HTML5, CSS3, and JavaScript. All rights reserved.
                 </p>
+                <a href="#home" class="back-to-top" title="Back to top">
+                    <span>Back to top</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
